@@ -1,14 +1,38 @@
 import { useCallback } from "react";
 import "antd/dist/antd.min.css";
-import { Menu, Dropdown} from "antd";
-import {DownOutlined} from "@ant-design/icons";
+import { Menu, Dropdown, Button } from "antd";
+import {
+  DownOutlined,
+  ArrowLeftOutlined,
+  ArrowRightOutlined,
+  CalendarOutlined,
+  CheckOutlined,
+  ClockCircleOutlined,
+  CloseOutlined,
+  DeleteOutlined,
+  EditOutlined,
+  ExclamationCircleOutlined,
+  HeartOutlined,
+  LeftOutlined,
+  LockOutlined,
+  MailOutlined,
+  PaperClipOutlined,
+  PhoneOutlined,
+  QuestionCircleOutlined,
+  ReloadOutlined,
+  RightOutlined,
+  SearchOutlined,
+  SendOutlined,
+  ShareAltOutlined,
+  UserOutlined,
+} from "@ant-design/icons";
 import { useRouter } from "next/router";
-import Link from "next/link";
+
 const Hero = () => {
   const router = useRouter();
 
   const onSearchCTAClick = useCallback(() => {
-    router.push("/properties");
+    router.push("/");
   }, [router]);
 
   return (
@@ -26,13 +50,11 @@ const Hero = () => {
         </div>
         <div className="self-stretch flex flex-col items-center justify-start gap-[17px] text-left text-base text-primary-700 font-body-regular-600">
           <div className="flex flex-row items-start justify-start gap-[10px]">
-            <Link href="/properties">
-              <button className="cursor-pointer [border:none] py-3 px-6 bg-primary-500 rounded overflow-hidden flex flex-row items-start justify-start sm:hover:bg-primary-500">
-                <div className="relative text-base leading-[24px] font-medium font-body-regular-600 text-gray-white text-center sm:hover:text-gray-white">
-                  Rent
-                </div>
-              </button>
-            </Link>
+            <button className="cursor-pointer [border:none] py-3 px-6 bg-primary-500 rounded overflow-hidden flex flex-row items-start justify-start sm:hover:bg-primary-500">
+              <div className="relative text-base leading-[24px] font-medium font-body-regular-600 text-gray-white text-center sm:hover:text-gray-white">
+                Rent
+              </div>
+            </button>
             <button className="cursor-pointer [border:none] py-3 px-6 bg-gray-white rounded overflow-hidden flex flex-row items-start justify-start sm:hover:bg-gray-white">
               <div className="relative text-base leading-[24px] font-medium font-body-regular-600 text-primary-400 text-center sm:hover:text-primary-500">
                 Sale
@@ -134,7 +156,7 @@ const Hero = () => {
                 </Dropdown>
               </div>
               <button
-                className="cursor-pointer [border:none] py-3 px-6 bg-primary-500 rounded w-[102px] flex flex-row box-border items-center justify-center sm:hover:bg-steelblue"
+                className="cursor-pointer [border:none] py-3 px-6 bg-cadetblue rounded w-[102px] flex flex-row box-border items-center justify-center sm:hover:bg-steelblue"
                 onClick={onSearchCTAClick}
               >
                 <div className="relative text-base leading-[24px] font-medium font-body-regular-600 text-gray-white text-center">
