@@ -134,7 +134,7 @@ const Hero = () => {
                 </Dropdown>
               </div>
               <button
-                className="cursor-pointer [border:none] py-3 px-6 bg-primary-500 rounded w-[102px] flex flex-row box-border items-center justify-center sm:hover:bg-steelblue"
+                className="cursor-pointer [border:none] py-3 px-6 bg-cadetblue rounded w-[102px] flex flex-row box-border items-center justify-center sm:hover:bg-steelblue"
                 onClick={onSearchCTAClick}
               >
                 <div className="relative text-base leading-[24px] font-medium font-body-regular-600 text-gray-white text-center">
