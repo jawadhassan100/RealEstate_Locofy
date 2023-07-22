@@ -44,7 +44,7 @@ const PropertiesGridView = () => {
 
   return (
     <div className=" bg-gray-white w-full flex flex-col items-start justify-start text-center text-33xl text-gray-white font-body-regular-400">
-      <Header hamburger={false} />
+      <Header />
       <div className="self-stretch h-60 flex flex-col items-center justify-center bg-[url(/category@3x.png)] bg-cover bg-no-repeat bg-top">
         <div className="flex flex-col items-center justify-start gap-[12px]">
           <div className=" leading-[72px] font-semibold">Properties</div>
