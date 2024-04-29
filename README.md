@@ -1,5 +1,5 @@
 
-  # JSM Real Estate:
+  # Locofy Real Estate:
 
   Note: Please ensure you have installed <code><a href="https://nodejs.org/en/download/">nodejs</a></code>
 
@@ -7,6 +7,9 @@
   1) Open project folder in <a href="https://code.visualstudio.com/download">Visual Studio Code</a>
   2) In the terminal, run `npm install`
   3) Run `npm run dev` to view project in browser
+
+ # Description 
+  1) This website is designed in figma and then though locofy.ai the design is converted into react code which is simply       used in next js 
 
   # Technology Used:
   1) Figma
